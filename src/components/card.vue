@@ -1,12 +1,12 @@
 
 
 <template>
-<div>
+<div class="flex flex-col overflow-hidden rounded-xl shadow-xl">
     <div>
        <img :src="character.image" alt=""/>
     </div>
-    <div>
-       <h3>{{ character.name }}</h3>
+    <div class="p-3">
+       <h3 class="text-2xl text-center">{{ character.name }}</h3>
     </div>
 </div>
 </template>
