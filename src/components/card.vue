@@ -1,18 +1,24 @@
+
+
+<template>
+<div>
+    <div>
+       <img :src="character.image" alt=""/>
+    </div>
+    <div>
+       <h3>{{ character.name }}</h3>
+    </div>
+</div>
+</template>
+
 <script setup>
 import { defineProps } from 'vue';
+
     const props = defineProps({
-        character: []
+        character:{
+        required:true,
+        type: Object
+        }
     })
     
 </script>
-
-<template>
-    <div>
-        <div>
-          <img src="" alt="">
-        </div>
-        <div>
-           <h3>nombre</h3>
-        </div>
-    </div>
-</template>

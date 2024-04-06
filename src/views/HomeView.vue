@@ -19,7 +19,8 @@ loadCharacters()
    </div>
     
    <div v-for="personaje in character" :key="character.id">
-      {{ personaje.name }}
+      <card :character="personaje">
+         </card>
    </div>
 
    <!-- <card :character="character"/> -->
